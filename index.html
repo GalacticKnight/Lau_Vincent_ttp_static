@@ -5,20 +5,20 @@
   <body>
     <h1>Name: Vincent Lau</h1>
     <h1>Hobby: Piano Playing</h1>
-    <p id="demo">Time 24 hours</p>
-    <p id="demo2">Time 12 hours</p>
+    <p id="tinker1">Time 24 hours</p>
+    <p id="tinker2">Time 12 hours</p>
     <script>
         var clock = setInterval(clocktimer,1)
             function clocktimer(){
                 var time = new Date();
                 var date = time.getHours()+':'+(time.getMinutes()+1)+':'+time.getSeconds();
-                document.getElementById("demo").innerHTML = date;
+                document.getElementById("tinker1").innerHTML = date;
 
                 var d = new Date();
                 var a = d.toLocaleTimeString();
                 b = a.replace("PM","")
                 c = b.replace("AM","")
-                document.getElementById("demo2").innerHTML = c;
+                document.getElementById("tinker2").innerHTML = c;
             }
     
     </script>
